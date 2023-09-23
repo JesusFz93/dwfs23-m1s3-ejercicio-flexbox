@@ -1,0 +1,22 @@
+/* .container-padre {
+  border: 5px solid rgb(8, 0, 255);
+
+  display: flex;
+  justify-content: center;
+} */
+
+.container {
+  border: 5px solid red;
+  /* width: 1000px; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 150px; */
+}
+
+.box {
+  border: 1px solid white;
+  background-color: black;
+  font-size: 80px;
+  color: white;
+}

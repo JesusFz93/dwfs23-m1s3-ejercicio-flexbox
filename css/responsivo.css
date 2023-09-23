@@ -1,0 +1,48 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+.encabezado {
+  background-color: #4b0082;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .encabezado {
+    background-color: #0000ff;
+    font-size: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .encabezado {
+    background-color: #00ff00;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .encabezado {
+    background-color: #ffff00;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .encabezado {
+    background-color: #ff7f00;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .encabezado {
+    background-color: #ff0000;
+  }
+}

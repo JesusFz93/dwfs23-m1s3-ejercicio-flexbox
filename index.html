@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" sizes="32x32" />
+    <title>Hamburgueseria</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="./assets/images/carlsjs.svg" alt="Logo Carls" />
+      <nav class="navegacion">
+        <a class="enlace" href="#">Home</a>
+        <a class="enlace" href="#menu">Menu</a>
+        <a class="enlace" href="#contacto">Contacto</a>
+        <a class="enlace" href="#">Ayuda</a>
+      </nav>
+    </header>
+    <section class="contenido-principal">
+      <div class="contenedor-principal">
+        <img
+          class="banner"
+          src="./assets/images/banner.jpg"
+          alt="Ordena y Recoge"
+        />
+        <h1 class="titulo">Las mejores hamburguesas de la ciudad.</h1>
+      </div>
+    </section>
+    <main id="menu" class="seccion-hamburguesas contenedor">
+      <h2 class="text-center">Hamburguesas</h2>
+      <div class="listado-hamburguesas">
+        <article class="hamburguesa">
+          <img
+            src="./assets/images/DoubleWesternBaconCheeseburger.webp"
+            alt="Double Western"
+          />
+
+          <div class="texto-hamburguesa">
+            <h3>Double Western Bacon Cheeseburger</h3>
+            <p>
+              Dos piezas de carne 100% de res asada a la parrilla, salsa BBQ,
+              rebanadas de tocino, queso americano y aros de cebolla
+              empanizados.
+            </p>
+            <p class="precio">$189.00</p>
+            <a class="btn" href="#">Ver mas...</a>
+          </div>
+        </article>
+        <article class="hamburguesa">
+          <img
+            src="./assets/images/FamousStarWithCheese.webp"
+            alt="Famous Star"
+          />
+
+          <div class="texto-hamburguesa">
+            <h3>Famous Star with Cheese</h3>
+            <p>
+              Carne 100% de res asada a la parrilla, salsa especial, queso
+              americano, mayonesa, lechuga, cebolla, tomate y pepinillos.
+            </p>
+            <p class="precio">$129.00</p>
+
+            <a class="btn" href="#">Ver mas...</a>
+          </div>
+        </article>
+        <article class="hamburguesa">
+          <img
+            src="./assets/images/JalapenoBurger.webp"
+            alt="Jalapeno Burger"
+          />
+
+          <div class="texto-hamburguesa">
+            <h3>Jalapeño Burger</h3>
+            <p>
+              Carne 100% de res asada a la parrilla, chiles jalapeños, queso
+              Pepper Jack,cebolla, tomate, lechuga y salsa Santa Fe.
+            </p>
+            <p class="precio">$159.00</p>
+            <a class="btn" href="#">Ver mas...</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <section id="contacto" class="sobre-nosotros">
+      <div class="contenedor sobre-nosotros-grid">
+        <div class="texto-nosotros">
+          <h2>Contacto</h2>
+          <p>Ingresa tu correo electronico para suscribirte</p>
+          <form class="formulario-contacto">
+            <label for="email">Correo electronico</label>
+            <input type="email" placeholder="Tu correo electronico" />
+            <button type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="copyright">Pagina creada con fines educativos</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+:root {
+  --primario: #3f3f3f;
+  --secundario: #ffffff;
+  --terciario: #880101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+  scroll-behavior: smooth;
+}
+
+/*utilidades*/
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Encabezado */
+
+.encabezado {
+  background-color: var(--primario);
+  color: var(--secundario);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Para encabezado fijo */
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  width: 300px;
+  margin: 2rem 0;
+  /* border: solid white 1px; */
+}
+
+.navegacion {
+  display: flex;
+  /* border: solid white 1px; */
+}
+
+.enlace {
+  color: var(--secundario);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem;
+}
+
+.enlace:hover {
+  color: var(--terciario);
+  background-color: var(--secundario);
+}
+
+/* Contenido principal */
+
+.contenido-principal {
+  /* background-color: red; */
+  /* border: solid white 1px; */
+  background-color: var(--terciario);
+  /* Para encabezado fijo */
+  padding-top: 130px;
+}
+
+.contenedor-principal {
+  /* border: solid blue 1px; */
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.banner {
+  width: 100%;
+  /* border: solid white 1px; */
+}
+
+.titulo {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--secundario);
+}
+
+/*Seccion hamburguesas*/
+
+.seccion-hamburguesas {
+  /* Para encabezado fijo */
+  padding-top: 130px;
+}
+
+.seccion-hamburguesas h2 {
+  font-size: 4.6rem;
+  text-align: center;
+}
+
+.hamburguesa {
+  background-color: var(--primario);
+}
+
+.listado-hamburguesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.texto-hamburguesa {
+  text-align: center;
+  color: var(--secundario);
+  padding: 2rem;
+}
+
+.texto-hamburguesa h3 {
+  margin: 0;
+}
+.texto-hamburguesa p {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+.texto-hamburguesa .precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  background-color: rgb(197, 145, 0);
+  display: block;
+  color: var(--secundario);
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+}
+.btn:hover {
+  background-color: rgb(158, 116, 0);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+/* contacto */
+.sobre-nosotros {
+  margin-top: 5rem;
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #880101 50%,
+      #880101 100%
+    ),
+    url(../assets/images/contacto.jpg);
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem;
+}
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: flex-end;
+}
+.texto-nosotros {
+  flex-basis: 50%;
+  padding-left: 10rem;
+  color: var(--secundario);
+  font-size: 2.5rem;
+}
+
+.formulario-contacto {
+  margin-top: 5rem;
+}
+
+.formulario-contacto input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #000;
+}
+
+.formulario-contacto button {
+  background-color: rgb(197, 145, 0);
+  display: block;
+  color: var(--secundario);
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.formulario-contacto button:hover {
+  background-color: rgb(158, 116, 0);
+  cursor: pointer;
+}
+
+.site-footer {
+  background-color: var(--primario);
+  padding: 5rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--secundario);
+  font-weight: bold;
+}

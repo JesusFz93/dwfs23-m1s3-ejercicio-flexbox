@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seccion de encabezado */
+.encabezado {
+  background-color: #3f3f3f;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 300px;
+}
+
+.navegacion {
+  display: flex;
+  /* gap: 20px; */
+}
+
+.enlace {
+  /* border: 1px solid rgb(220, 17, 17); */
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.enlace:hover {
+  color: #880101;
+  background-color: white;
+}
+
+/* Seccion de publicidad */
+.publicidad {
+  background-color: #880101;
+}
+
+.contenedor {
+  max-width: 1200px;
+  /* border: 1px white solid; */
+  margin: 0 auto;
+  width: 90%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.titulo {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+/* Hamburguesas */
+.titulo-hamburguesas {
+  font-size: 46px;
+  text-align: center;
+}
+
+.listado-hamburguesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hamburguesa {
+  background-color: #3f3f3f;
+}
+
+.hamburguesa-imagen {
+  max-width: 100%;
+}
